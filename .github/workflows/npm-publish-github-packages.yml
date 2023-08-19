@@ -38,13 +38,13 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
-          scope: '@emmanuelknafo'
+          scope: '@githubdevopsabcs'
       - run: |
           ls
           npm ci
         working-directory: ./sample-packages/npm
       - run: |
-          npm login --registry=https://npm.pkg.github.com
+          #npm login --registry=https://npm.pkg.github.com
           npm publish
         working-directory: ./sample-packages/npm
         env:
