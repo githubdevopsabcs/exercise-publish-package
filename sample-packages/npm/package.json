@@ -1,5 +1,5 @@
 {
-  "name": "simple-package",
+  "name": "exercise-publish-package",
   "version": "1.0.0",
   "description": "simple npm package",
   "main": "index.js",
