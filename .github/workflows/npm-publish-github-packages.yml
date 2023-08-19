@@ -21,7 +21,7 @@ jobs:
           cat package.json
           npm ci
         working-directory: ./sample-packages/npm
-      - run: npm test
+      - run: npm test --if-present
         working-directory: ./sample-packages/npm
 
   publish-gpr:
