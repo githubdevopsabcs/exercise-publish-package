@@ -43,7 +43,9 @@ jobs:
           ls
           npm ci
         working-directory: ./sample-packages/npm
-      - run: npm publish
+      - run: |
+          npm login --registry=https://npm.pkg.github.com
+          npm publish
         working-directory: ./sample-packages/npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
